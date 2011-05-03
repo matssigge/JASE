@@ -1,0 +1,36 @@
+// JASE64.idl : IDL source for JASE64
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (JASE64.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(B3309B32-3053-4093-B952-C2C5CD50C8B4),
+	dual,
+	nonextensible,
+	helpstring("IJustMenu64 Interface"),
+	pointer_default(unique)
+]
+interface IJustMenu64 : IDispatch{
+};
+[
+	uuid(3756FB27-B622-4C28-BB6C-AEE3B18FD734),
+	version(1.0),
+	helpstring("JASE64 1.0 Type Library")
+]
+library JASE64Lib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(4C402385-2370-443F-8E00-21B88EED4B6F),
+		helpstring("JustMenu64 Class")
+	]
+	coclass JustMenu64
+	{
+		[default] interface IJustMenu64;
+	};
+};

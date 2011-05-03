@@ -1,0 +1,12 @@
+JASE - Just Another Shell Extension
+-----------------------------------
+
+This is a small shell extension which adds a couple of useful functions to
+the right-click menu in Windows Explorer.
+
+* Copy filename - copies the filename(s) of the currently selected file(s)
+  or folder(s) to the clipboard. Supports different formats.
+* Add folder to path - when right-clicking on a folder, you can add that
+  folder to the PATH environment variable.
+
+Build using Visual Studio and then simply regsvr32.dll JASE64.dll.

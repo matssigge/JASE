@@ -1,0 +1,46 @@
+HKCR
+{
+    JASE64.JustMenu64.1 = s 'JustMenu64 Class'
+    {
+        CLSID = s '{4C402385-2370-443F-8E00-21B88EED4B6F}'
+    }
+    JASE64.JustMenu64 = s 'JustMenu64 Class'
+    {
+        CLSID = s '{4C402385-2370-443F-8E00-21B88EED4B6F}'
+        CurVer = s 'JASE64.JustMenu64.1'
+    }
+    NoRemove CLSID
+    {
+        ForceRemove {4C402385-2370-443F-8E00-21B88EED4B6F} = s 'JustMenu64 Class'
+        {
+            ProgID = s 'JASE64.JustMenu64.1'
+            VersionIndependentProgID = s 'JASE64.JustMenu64'
+            ForceRemove 'Programmable'
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Both'
+            }
+            'TypeLib' = s '{3756FB27-B622-4C28-BB6C-AEE3B18FD734}'
+        }
+    }
+    NoRemove '*'
+    {
+        NoRemove 'shellex'
+        {
+            NoRemove 'ContextMenuHandlers'
+            {
+                'JASE64' = s '{4C402385-2370-443F-8E00-21B88EED4B6F}'
+            }
+        }
+    }
+    NoRemove 'Folder'
+    {
+        NoRemove 'shellex'
+        {
+            NoRemove 'ContextMenuHandlers'
+            {
+                'JASE' = s '{4C402385-2370-443F-8E00-21B88EED4B6F}'
+            }
+        }
+    }
+}

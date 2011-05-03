@@ -1,0 +1,10 @@
+; JASE64.def : Declares the module parameters.
+
+LIBRARY      "JASE64.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE

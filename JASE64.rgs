@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'JASE64'
+		'JASE64.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}
