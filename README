@@ -9,4 +9,5 @@ the right-click menu in Windows Explorer.
 * Add folder to path - when right-clicking on a folder, you can add that
   folder to the PATH environment variable.
 
-Build using Visual Studio and then simply regsvr32.dll JASE64.dll.
+Build using Visual Studio and then simply 
+> regsvr32 JASE64.dll.
