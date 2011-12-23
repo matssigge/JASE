@@ -11,3 +11,8 @@ the right-click menu in Windows Explorer.
 
 Build using Visual Studio and then simply 
 > regsvr32 JASE64.dll.
+
+
+I put this up on GitHub since there are people using it, and I don't have
+a Windows development machine anymore. So even though I can't build an update, 
+at least the source code is preserved if anyone needs or wants it.
